@@ -18,7 +18,11 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 
 
-Results:
+### Results:
+
+    ### Random Oversampling
+        
+        
 
 There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
 Summary:
