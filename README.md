@@ -20,8 +20,17 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ### Results:
 
-    ### Random Oversampling
-        
+#### Random Oversampling
+![Rand] (https://github.com/austink24/Credit_Risk_Analysis/blob/main/Random_overSampling.png)
+
+#### SMOTE
+![SMOTE] (https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOTE.png)
+
+#### ClusterCentroids
+![Cluster] (
+    * SMOTEENN
+    * BalancedRandomForestClassifier
+    * EasyEnsembleClassifier 
         
 
 There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
