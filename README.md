@@ -20,22 +20,22 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ### Results:
 
-#### Random Oversampling
+#### - Random Oversampling
 ![Rand](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Random_overSampling.png)
 
-#### SMOTE
+#### - SMOTE
 ![SMOTE](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOTE.png)
 
-#### ClusterCentroids
+####  - ClusterCentroids
 ![Cluster](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Cluster_centroid.png)
 
-#### SMOTEENN
+#### - SMOTEENN
 ![Smoteenn](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOOTENN.png)
 
-####  BalancedRandomForestClassifier
+####  - BalancedRandomForestClassifier
 ![Blanced](https://github.com/austink24/Credit_Risk_Analysis/blob/main/balanced_random.png)
 
-#### EasyEnsembleClassifier 
+#### - EasyEnsembleClassifier 
 ![Easy](https://github.com/austink24/Credit_Risk_Analysis/blob/main/AdAboost.png)
 
         
