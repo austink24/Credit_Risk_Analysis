@@ -84,7 +84,7 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 
 ## Summary:
-In summary I would on recommend any of these models. I would suggest either adding more data to these models to improve accuracy or continue to search for a model that will minimize the FN even further. With Fraudulent transactions being so costly it wise to continue to refine models to reduce FN.
+In summary I would not recommend any of these models. I would suggest either adding more data to these models to improve accuracy or continue to search for a model that will minimize the FN even further. With Fraudulent transactions being so costly these days it would be wise to continue refining models to reduce FN.
 
 Out of all the models tested the EasyEnsembleClassifier was by far the best performing model and with no other options it would be the best model to use. Correctly predicting 80 out 88 fraudulent transactions and only predicting 1358 FP out of 17117 non-fraudulent which isn't ideal but a vast improvement on other moedels.
 
