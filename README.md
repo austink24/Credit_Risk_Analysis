@@ -11,7 +11,7 @@ The purpose for this analysis is to create the best model for predicting credit 
 
     * RandomOverSampler
     * SMOTE
-    * ClusterCentroids
+    * CentroidClustering
     * SMOTEENN
     * BalancedRandomForestClassifier
     * EasyEnsembleClassifier 
@@ -23,74 +23,68 @@ The purpose for this analysis is to create the best model for predicting credit 
 ### Random Oversampling:
 ![Rand](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Random_overSampling.png)
 
-##### - balanced accuracy score
+##### - balanced accuracy score - 66.5% of the time this model correctly predicted the fraudulant transaction however, it still missed 27 times out of 88 to identify a fraudulent transactions. 
 
-##### - precision
+##### - precision- when reviewing the results for Precision score we can see that a vary large number of transactions were predicted or flagged as fruadulent when they actaully weren't. 
 
-##### - recall scores 
+
+##### - recall scores - This models sensitivity/recal score shows that it doesn't prededict all the fraudulent transactions very well, improperly predicting almost 1/3 of the fraudulent transactions as not being fraudulent.
+
 
 
 ### SMOTE:
 ![SMOTE](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOTE.png)
 
-##### - balanced accuracy score
-
-##### - precision
-
-##### - recall scores 
+##### - balanced accuracy score - the accuracy score of this model only slightly improves upon the previous model RandomOverSampling with 67% vs 66.5%.
 
 
-### ClusterCentroids:
+##### - precision - it's precision score still predicted a very large number of non-fraudulent transactions to be fraudulent, actaully predicting ever more FP's than the previous model.
+
+##### - recall scores - only a slight improvement of sensitivity score over the RandomOverSampling model with 63 out of 88 TP, versus 61 out 88 TP with RandomOverSampling.
+
+
+### CentroidClustering:
 ![Cluster](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Cluster_centroid.png)
 
-##### - balanced accuracy score
+##### - balanced accuracy score - there wasn't any improvement using Undersampling and ClusterCentroids model on accuracy score. 
 
-##### - precision
+##### - precision - there also no noticable improvement with the prescision score as it still predicted a large number of FPs.
 
-##### - recall scores 
-
+##### - recall scores - for the sensitivity score it did show an improvement on prediciting TN  but performed worse when it cam to predicting FN with that number increasing.
 
 ### SMOTEENN
 ![Smoteenn](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOOTENN.png)
 
-##### - balanced accuracy score
+##### - balanced accuracy score - the balanced scoore of SMOTEENN actaully dropped off at 60% when compared to the previous three models.
 
-##### - precision
+##### - precision - as with previous models SMOOTEEN still predicts a large number of False Positives the most of any model evaluated up to this point with 7343 FPs.
 
-##### - recall scores 
+##### - recall scores - there has been an improvement over previous models as far as recall score with this model where out of 88 fraudualent transactions this model correctly predicted 73 of them and only missed 15. Which still needs to be improved but better than previous.
 
 
 #### BalancedRandomForestClassifier
 ![Blanced](https://github.com/austink24/Credit_Risk_Analysis/blob/main/balanced_random.png)
-##### - balanced accuracy score
 
-##### - precision
+##### - balanced accuracy score - the balanced accuracy score of this model is the highest yet with 79.1%.
 
-##### - recall scores 
+##### - precision - we see that this model also does better with correctly predicting FP while only improperly predicting 1706 as fraudulent when they weren't but slips drastically when it comes to corretly identifying fraudulent tranaactions as seen by the increas in FN. 
+
+##### - recall scores - with this model the recall score is actually performing worse as it missed 28 fruadulent transactions by predicting them to be non-fraudulent.
 
 
 ### EasyEnsembleClassifier 
 ![Easy](https://github.com/austink24/Credit_Risk_Analysis/blob/main/AdAboost.png)
-##### - balanced accuracy score
 
-##### - precision
+##### - balanced accuracy score - this model performed best out of all the models tested with an accuracy score of 92.6%.
 
-##### - recall scores 
+##### - precision -  it also had the lowest FP predictions.
 
-
-Let's go over the results in the classification report:
-
-Precision: Precision is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications can be determined by the ratio TP/(TP + FP), which is 50/(50 + 22) = 0.69. The precision for the bad loan applications can be determined as follows: 19/(19 + 34) = 0.358. A low precision is indicative of a large number of false positives—of the 53 loan applications we predicted to be bad applications, 34 were actually good loan applications.
-Recall: Recall is the ability of the classifier to find all the positive samples. It can be determined by the ratio: TP/(TP + FN), or 50/(50 + 34) = 0.595 for the good loans and 19/(19 + 22) = 0.463 for the bad loans. A low recall is indicative of a large number of false negatives.
-F1 score: F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
-Support: Support is the number of actual occurrences of the class in the specified dataset. For our results, there are 84 actual occurrences for the good loans and 41 actual occurrences for bad loans.
-In summary, this model may not be the best one for preventing fraudulent loan applications because the model's accuracy, 0.552, is low, and the precision and recall are not good enough to state that the model will be good at classifying fraudulent loan applications. Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It's also important to have a goal that's been agreed upon, so that you know when the model is good enough.
+##### - recall scores - for its sensitivty score this model far out performed the rest by only having 8 FN out of 88 fraudulent transactions.
 
 
-        
 
-There is a bulleted list that describes the balanced accuracy score and the precision and recall scores of all six machine learning models (15 pt)
-Summary:
+## Summary:
+In summary I would on recommend any of these models. I would suggest either adding more data to these models to improve accuracy or continue to search for a model that will minimize the FN even further. With Fraudulent transactions being so costly it wise to continue to refine models to reduce FN.
 
-There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+Out of all the models tested the EasyEnsembleClassifier was by far the best performing model and with no other options it would be the best model to use. Correctly predicting 80 out 88 fraudulent transactions and only predicting 1358 FP out of 17117 non-fraudulent which isn't ideal but a vast improvement on other moedels.
+
