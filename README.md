@@ -59,6 +59,7 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ##### - recall scores 
 
+
 #### BalancedRandomForestClassifier
 ![Blanced](https://github.com/austink24/Credit_Risk_Analysis/blob/main/balanced_random.png)
 ##### - balanced accuracy score
@@ -72,9 +73,9 @@ The purpose for this analysis is to create the best model for predicting credit 
 ![Easy](https://github.com/austink24/Credit_Risk_Analysis/blob/main/AdAboost.png)
 ##### - balanced accuracy score
 
-##### -precision
+##### - precision
 
-##### -recall scores 
+##### - recall scores 
 
 
 Let's go over the results in the classification report:
