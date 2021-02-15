@@ -3,7 +3,7 @@
 ## Overview of the loan prediction risk analysis:
 
 
-### The purpose of this analysis is:
+## The purpose of this analysis is:
 
 The purpose for this analysis is to create the best model for predicting credit risk using multuple features. We are going to test using a few different models. After fine tuning those models we will pick the most accurate model to recommend. 
 
@@ -18,25 +18,25 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 
 
-### Results:
+## Results:
 
 ### Random Oversampling
 ![Rand](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Random_overSampling.png)
 
-##### *balanced accuracy score
+##### - balanced accuracy score
 
-##### *precision
+##### - precision
 
-##### *recall scores 
+##### - recall scores 
 
 ### SMOTE
 ![SMOTE](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOTE.png)
 
-##### *balanced accuracy score
+##### - balanced accuracy score
 
-##### *precision
+##### - precision
 
-##### *recall scores 
+##### - recall scores 
 
 ### ClusterCentroids
 
@@ -45,23 +45,23 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ##### *precision
 
-##### *recall scores 
+##### - recall scores 
 
 ### SMOTEENN
 ![Smoteenn](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOOTENN.png)
-##### *balanced accuracy score
+##### * balanced accuracy score
 
-##### *precision
+##### - precision
 
-##### *recall scores 
+##### - recall scores 
 
 #### BalancedRandomForestClassifier
 ![Blanced](https://github.com/austink24/Credit_Risk_Analysis/blob/main/balanced_random.png)
-##### *balanced accuracy score
+##### - balanced accuracy score
 
-##### *precision
+##### - precision
 
-##### *recall scores 
+##### - recall scores 
 
 
 ### EasyEnsembleClassifier 
