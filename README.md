@@ -20,7 +20,7 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ## Results:
 
-### Random Oversampling
+### Random Oversampling:
 ![Rand](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Random_overSampling.png)
 
 ##### - balanced accuracy score
@@ -29,7 +29,8 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ##### - recall scores 
 
-### SMOTE
+
+### SMOTE:
 ![SMOTE](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOTE.png)
 
 ##### - balanced accuracy score
@@ -38,18 +39,21 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ##### - recall scores 
 
-### ClusterCentroids
 
+### ClusterCentroids:
 ![Cluster](https://github.com/austink24/Credit_Risk_Analysis/blob/main/Cluster_centroid.png)
-##### *balanced accuracy score
 
-##### *precision
+##### - balanced accuracy score
+
+##### - precision
 
 ##### - recall scores 
 
+
 ### SMOTEENN
 ![Smoteenn](https://github.com/austink24/Credit_Risk_Analysis/blob/main/SMOOTENN.png)
-##### * balanced accuracy score
+
+##### - balanced accuracy score
 
 ##### - precision
 
@@ -66,11 +70,11 @@ The purpose for this analysis is to create the best model for predicting credit 
 
 ### EasyEnsembleClassifier 
 ![Easy](https://github.com/austink24/Credit_Risk_Analysis/blob/main/AdAboost.png)
-##### *balanced accuracy score
+##### - balanced accuracy score
 
-##### *precision
+##### -precision
 
-##### *recall scores 
+##### -recall scores 
 
 
 Let's go over the results in the classification report:
